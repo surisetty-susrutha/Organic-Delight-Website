@@ -1,4 +1,4 @@
-# Food Munch 
+# Organic Delight Food Munch 
 
 A modern restaurant website featuring a vibrant homepage, detailed menu categories, and seamless table reservations. Built with HTML, CSS, and Bootstrap for a beautiful, responsive design.
 
@@ -38,7 +38,7 @@ A modern restaurant website featuring a vibrant homepage, detailed menu categori
     - Consistent, mobile-responsive design  
     - Easy return link to Homepage menu section
 
-## Reservation Form** (`order.html`):  
+## Reservation Form (`order.html`):  
   - Inputs for name, email, phone, date, time, guest count  
   - Prominent "Book Now" button  
   - Contact fallback info (clickable phone/email links)
