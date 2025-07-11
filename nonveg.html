@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Non‑Veg Starters & Mains </title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background: #f5f2f1;
+      color: #333;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      padding-bottom: 40px;
+    }
+    .menu-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .menu-section h1 {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      color: #d32f2f;
+      text-align: center;
+    }
+    .menu-tables {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+    .menu-column { flex: 1 1 45%; }
+    .section-title {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #555;
+      text-align: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-top: 5px;
+    }
+    .menu-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 8px;
+    }
+    .menu-table th {
+      color: #777;
+      font-weight: 500;
+      padding-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .menu-table td {
+      background: #fafafa;
+      padding: 12px 10px;
+      border-radius: 8px;
+      vertical-align: top;
+    }
+    .item-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #444;
+    }
+    .item-desc {
+      display: block;
+      margin-top: 3px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .item-price {
+      font-weight: 600;
+      color: #444;
+    }
+    .back-link {
+      display: block;
+      margin: 30px auto 0;
+      text-align: center;
+      font-size: 1rem;
+      color: #d32f2f;
+      text-decoration: none;
+      border: 1px solid #d32f2f;
+      padding: 8px 16px;
+      width: fit-content;
+      border-radius: 25px;
+      transition: background .2s, color .2s;
+    }
+    .back-link:hover {
+      background: #d32f2f;
+      color: white;
+    }
+    @media(max-width: 768px) {
+      .menu-column { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-section">
+    <h1>Non‑Veg Starters & Main Course</h1>
+
+    <div class="menu-tables">
+      <div class="menu-column">
+        <div class="section-title">Starters</div>
+        <table class="menu-table">
+          <thead>
+            <tr><th>Dish</th><th class="text-right">₹</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="item-name">Chicken Tikka Skewers</span><span class="item-desc">Yoghurt‑marinated grilled chicken.</span></td><td class="text-right item-price">349</td></tr>
+            <tr><td><span class="item-name">Fish Finger Bites</span><span class="item-desc">Crispy battered fish strips.</span></td><td class="text-right item-price">399</td></tr>
+            <tr><td><span class="item-name">Chicken Popcorn</span><span class="item-desc">Bite‑size fried chicken nuggets.</span></td><td class="text-right item-price">289</td></tr>
+            <tr><td><span class="item-name">Chicken Lollipop</span><span class="item-desc">Spicy fried drumettes.</span></td><td class="text-right item-price">399</td></tr>
+            <tr><td><span class="item-name">Prawn Tempura</span><span class="item-desc">Lightly battered prawns.</span></td><td class="text-right item-price">459</td></tr>
+            <tr><td><span class="item-name">Chicken 65</span><span class="item-desc">Spicy southern‑style chicken.</span></td><td class="text-right item-price">339</td></tr>
+            <tr><td><span class="item-name">Chili Garlic Prawns</span><span class="item-desc">Fiery chili‑garlic prawns.</span></td><td class="text-right item-price">459</td></tr>
+            <tr><td><span class="item-name">Butter Garlic Fish</span><span class="item-desc">Tangy fish in garlic butter sauce.</span></td><td class="text-right item-price">429</td></tr>
+            <tr><td><span class="item-name">Chicken Malai Tikka</span><span class="item-desc">Creamy tender chicken cubes.</span></td><td class="text-right item-price">369</td></tr>
+            <tr><td><span class="item-name">Mutton Seekh Kebab</span><span class="item-desc">Spiced minced mutton kebabs.</span></td><td class="text-right item-price">399</td></tr>
+            <tr><td><span class="item-name">Fish Pakora</span><span class="item-desc">Crispy spiced fish fritters.</span></td><td class="text-right item-price">429</td></tr>
+            <tr><td><span class="item-name">Chicken Sheekh Roll</span><span class="item-desc">Spiced chicken roll wrap.</span></td><td class="text-right item-price">299</td></tr>
+            <tr><td><span class="item-name">Prawn Koliwada</span><span class="item-desc">Fried spicy prawns.</span></td><td class="text-right item-price">459</td></tr>
+            <tr><td><span class="item-name">Chicken Wings</span><span class="item-desc">Sticky spicy wings.</span></td><td class="text-right item-price">349</td></tr>
+            <tr><td><span class="item-name">Mutton Chops</span><span class="item-desc">Grilled marinated lamb chops.</span></td><td class="text-right item-price">499</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="menu-column">
+        <div class="section-title">Main Course</div>
+        <table class="menu-table">
+          <thead>
+            <tr><th>Dish</th><th class="text-right">₹</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="item-name">Butter Chicken</span><span class="item-desc">Creamy tomato chicken curry.</span></td><td class="text-right item-price">379</td></tr>
+            <tr><td><span class="item-name">Mutton Rogan Josh</span><span class="item-desc">Rich lamb curry.</span></td><td class="text-right item-price">499</td></tr>
+            <tr><td><span class="item-name">Fish Curry</span><span class="item-desc">Spicy coastal fish curry.</span></td><td class="text-right item-price">369</td></tr>
+            <tr><td><span class="item-name">Prawn Masala</span><span class="item-desc">Prawns in tangy masala.</span></td><td class="text-right item-price">449</td></tr>
+            <tr><td><span class="item-name">Chicken Korma</span><span class="item-desc">Creamy cashew-based curry.</span></td><td class="text-right item-price">399</td></tr>
+            <tr><td><span class="item-name">Fish Fry</span><span class="item-desc">Crispy spiced pan-fried fish.</span></td><td class="text-right item-price">389</td></tr>
+            <tr><td><span class="item-name">Mutton Biryani</span><span class="item-desc">Fragrant rice with lamb.</span></td><td class="text-right item-price">499</td></tr>
+            <tr><td><span class="item-name">Chicken Biryani</span><span class="item-desc">Aromatic rice with chicken.</span></td><td class="text-right item-price">379</td></tr>
+            <tr><td><span class="item-name">Prawn Pulao</span><span class="item-desc">Rice cooked with prawns.</span></td><td class="text-right item-price">429</td></tr>
+            <tr><td><span class="item-name">Chicken Vindaloo</span><span class="item-desc">Spicy Goan curry.</span></td><td class="text-right item-price">399</td></tr>
+            <tr><td><span class="item-name">Keema Matar</span><span class="item-desc">Minced meat with peas.</span></td><td class="text-right item-price">359</td></tr>
+            <tr><td><span class="item-name">Chicken Saag</span><span class="item-desc">Chicken in spinach gravy.</span></td><td class="text-right item-price">379</td></tr>
+            <tr><td><span class="item-name">Mutton Korma</span><span class="item-desc">Creamy lamb curry.</span></td><td class="text-right item-price">499</td></tr>
+            <tr><td><span class="item-name">Fish Tikka Masala</span><span class="item-desc">Grilled fish in spicy masala.</span></td><td class="text-right item-price">389</td></tr>
+            <tr><td><span class="item-name">Chicken Jalfrezi</span><span class="item-desc">Stir-fry chicken with peppers.</span></td><td class="text-right item-price">379</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <a href="index.html#menu-section" class="back-link">← Back to Menu</a>
+  </div>
+
+</body>
+</html>

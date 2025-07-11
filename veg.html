@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Veg Starters & Mains </title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background: #f5f2f1;
+      color: #333;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      padding-bottom: 40px;
+    }
+    .menu-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .menu-section h1 {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+      color: #d32f2f;
+      text-align: center;
+    }
+    .menu-tables {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+    .menu-column { flex: 1 1 45%; }
+    .section-title {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: #555;
+      text-align: center;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      margin-top: 5px;
+    }
+    .menu-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 8px;
+    }
+    .menu-table th {
+      color: #777;
+      font-weight: 500;
+      padding-bottom: 8px;
+      font-size: 1.1rem;
+    }
+    .menu-table td {
+      background: #fafafa;
+      padding: 12px 10px;
+      border-radius: 8px;
+      vertical-align: top;
+    }
+    .item-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #444;
+    }
+    .item-desc {
+      display: block;
+      margin-top: 3px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .item-price {
+      font-weight: 600;
+      color: #444;
+    }
+    .back-link {
+      display: block;
+      margin: 30px auto 0;
+      text-align: center;
+      font-size: 1rem;
+      color: #d32f2f;
+      text-decoration: none;
+      border: 1px solid #d32f2f;
+      padding: 8px 16px;
+      width: fit-content;
+      border-radius: 25px;
+      transition: background .2s, color .2s;
+    }
+    .back-link:hover {
+      background: #d32f2f;
+      color: white;
+    }
+    @media(max-width: 768px) {
+      .menu-column { flex: 1 1 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu-section">
+    <h1>Veg Starters & Main Course</h1>
+
+    <div class="menu-tables">
+      <div class="menu-column">
+        <div class="section-title">Starters</div>
+        <table class="menu-table">
+          <thead>
+            <tr><th>Dish</th><th class="text-right">₹</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="item-name">Crispy Paneer Pops</span><span class="item-desc">Fried cottage cheese bites.</span></td><td class="text-right item-price">299</td></tr>
+            <tr><td><span class="item-name">Veg Spring Rolls</span><span class="item-desc">Crispy mixed veggie rolls.</span></td><td class="text-right item-price">249</td></tr>
+            <tr><td><span class="item-name">Stuffed Mushrooms</span><span class="item-desc">Cheese & herb stuffed caps.</span></td><td class="text-right item-price">279</td></tr>
+            <tr><td><span class="item-name">Hara Bhara Kebab</span><span class="item-desc">Spinach & peas patties.</span></td><td class="text-right item-price">249</td></tr>
+            <tr><td><span class="item-name">Paneer Tikka</span><span class="item-desc">Grilled cottage cheese cubes.</span></td><td class="text-right item-price">329</td></tr>
+            <tr><td><span class="item-name">Crispy Corn Bites</span><span class="item-desc">Sweet corn fritters.</span></td><td class="text-right item-price">219</td></tr>
+            <tr><td><span class="item-name">Aloo Tikki Chaat</span><span class="item-desc">Spiced potato patties.</span></td><td class="text-right item-price">199</td></tr>
+            <tr><td><span class="item-name">Veg Manchurian</span><span class="item-desc">Saucy veg balls.</span></td><td class="text-right item-price">259</td></tr>
+            <tr><td><span class="item-name">Paneer Pakora</span><span class="item-desc">Gram flour fried paneer.</span></td><td class="text-right item-price">279</td></tr>
+            <tr><td><span class="item-name">Masala Papad</span><span class="item-desc">Crispy papad with toppings.</span></td><td class="text-right item-price">129</td></tr>
+            <tr><td><span class="item-name">Vegetable Cutlets</span><span class="item-desc">Mixed veg patties.</span></td><td class="text-right item-price">229</td></tr>
+            <tr><td><span class="item-name">Broccoli Cheese Bites</span><span class="item-desc">Broccoli fritters with cheese.</span></td><td class="text-right item-price">249</td></tr>
+            <tr><td><span class="item-name">Soya Chaap</span><span class="item-desc">Creamy soya stick curry.</span></td><td class="text-right item-price">349</td></tr>
+            <tr><td><span class="item-name">Spinach Corn Fingers</span><span class="item-desc">Spinach & corn strips.</span></td><td class="text-right item-price">229</td></tr>
+            <tr><td><span class="item-name">Cheese Potato Croquettes</span><span class="item-desc">Cheesy mashed potato rolls.</span></td><td class="text-right item-price">279</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="menu-column">
+        <div class="section-title">Main Course</div>
+        <table class="menu-table">
+          <thead>
+            <tr><th>Dish</th><th class="text-right">₹</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="item-name">Paneer Butter Masala</span><span class="item-desc">Creamy tomato-based curry.</span></td><td class="text-right item-price">349</td></tr>
+            <tr><td><span class="item-name">Dal Makhani</span><span class="item-desc">Slow-cooked black lentils.</span></td><td class="text-right item-price">299</td></tr>
+            <tr><td><span class="item-name">Mix Veg Curry</span><span class="item-desc">Seasonal veg in spiced gravy.</span></td><td class="text-right item-price">299</td></tr>
+            <tr><td><span class="item-name">Aloo Gobi</span><span class="item-desc">Potato & cauliflower masala.</span></td><td class="text-right item-price">259</td></tr>
+            <tr><td><span class="item-name">Malai Kofta</span><span class="item-desc">Creamy veg dumplings.</span></td><td class="text-right item-price">369</td></tr>
+            <tr><td><span class="item-name">Shahi Paneer</span><span class="item-desc">Rich cashew-based gravy.</span></td><td class="text-right item-price">379</td></tr>
+            <tr><td><span class="item-name">Navratan Korma</span><span class="item-desc">Mixed veg in creamy sauce.</span></td><td class="text-right item-price">399</td></tr>
+            <tr><td><span class="item-name">Bhindi Masala</span><span class="item-desc">Spiced okra curry.</span></td><td class="text-right item-price">269</td></tr>
+            <tr><td><span class="item-name">Chana Masala</span><span class="item-desc">Spicy chickpea curry.</span></td><td class="text-right item-price">279</td></tr>
+            <tr><td><span class="item-name">Palak Paneer</span><span class="item-desc">Spinach & cottage cheese dish.</span></td><td class="text-right item-price">359</td></tr>
+            <tr><td><span class="item-name">Jeera Aloo</span><span class="item-desc">Cumin-spiced potatoes.</span></td><td class="text-right item-price">219</td></tr>
+            <tr><td><span class="item-name">Vegetable Biryani</span><span class="item-desc">Fragrant rice with mixed veg.</span></td><td class="text-right item-price">329</td></tr>
+            <tr><td><span class="item-name">Kadai Paneer</span><span class="item-desc">Spicy bell pepper curry.</span></td><td class="text-right item-price">369</td></tr>
+            <tr><td><span class="item-name">Bhatura & Chole</span><span class="item-desc">Fried bread with chickpeas.</span></td><td class="text-right item-price">299</td></tr>
+            <tr><td><span class="item-name">Malabar Paratha</span><span class="item-desc">Layered flatbread.</span></td><td class="text-right item-price">199</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <a href="index.html#menu-section" class="back-link">← Back to Menu</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reserve a Table </title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background: #f5f2f1;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      padding: 40px 0;
+    }
+    .reservation-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .reservation-container h1 {
+      color: #00796b;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .form-group label {
+      font-weight: 600;
+      color: #444;
+    }
+    .form-control {
+      border-radius: 6px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      transition: border-color .3s;
+    }
+    .form-control:focus {
+      border-color: #00796b;
+      box-shadow: 0 0 5px rgba(0,121,107,0.2);
+    }
+    .btn-book {
+      width: 100%;
+      background: #00796b;
+      color: white;
+      font-size: 1.1rem;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      transition: background .3s;
+    }
+    .btn-book:hover {
+      background: #004d40;
+    }
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .contact-info a {
+      color: #00796b;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="reservation-container">
+    <h1>Reserve a Table</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name"
+               class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email"
+               class="form-control" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone"
+               class="form-control" placeholder="+91XXXXXXXXX" required />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="date">Reservation Date</label>
+          <input type="date" id="date" class="form-control" required />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="time">Time</label>
+          <input type="time" id="time" class="form-control" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests"
+               class="form-control" placeholder="e.g., 4" min="1" max="20" required />
+      </div>
+      <button type="submit" class="btn-book">Book Now</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Or call us directly at <a href="tel:+9102000XXXX">+91‑02000‑XXXX</a></p>
+      <p>Email: <a href="mailto:reserve@foodmunch.com">reserve@foodmunch.com</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
